@@ -273,6 +273,34 @@ void zamiana_jednostek(){
 
         }
         break;
+            case 11:{
+        system("cls");
+    cout << "--- Menu zamiany jednostek ---" << endl;
+    cout << "Wybierz jednostke docelowa: " << endl << endl;
+    cout << "1. m - metr" << endl;
+    cout << "2. in - cal" << endl << endl;
+    cout << "3. ft - stopa" << endl << endl;
+    cout << "Wprowadz numer opcji: ";
+    cin >> wybor_drugiej;
+
+        switch (wybor_drugiej){
+            case 1:{
+             cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 1000 << " m" << endl;
+            }
+            break;
+            case 2:{
+            cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 39370.08 << " in" << endl;
+            }
+            break;
+            case 3:{
+            cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana *  3280 << " ft" << endl;
+            }
+            break;
+         
+        }
+
+        }
+        break;
 
 }
 }
