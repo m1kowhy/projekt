@@ -350,7 +350,10 @@ void zamiana_jednostek(){
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
     cout << "2. in - cal" << endl ;
-    cout << "3. ft - stopa" << endl << endl;
+    cout << "3. ft - stopa" << endl;
+	cout << "4. mi - mila" << endl;
+	cout << "5. cm - centymetr" << endl;
+	cout << "6. mm - milimetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -367,6 +370,19 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana *  3280 << " ft" << endl;
             }
             break;
+			case 4:{
+			cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 0.621371192 << " mi" << endl;
+			}
+			break;
+			case 5:{
+			cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 1000 << " cm" << endl;
+			}
+			break;
+			case 6:{
+			cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 10000 << " mm" << endl;
+			}
+			break;
+			
          
         }
 
@@ -442,6 +458,24 @@ void zamiana_jednostek(){
 	
 	}
 	break;
+			case 14:{
+		system("cls"); // centymetry
+	cout <<" --- Menu zamiany jednostek --- " << endl;
+	cout << " Wybierz jednostke docelowa: "<< endl << endl;
+	cout << "1. ft - stopa " << endl;
+	cout << "2. in - cal " << endl;
+	cout << "3. mi - mila " << endl;
+	cout << "4. km - kilometr " << endl;
+	cout << "5. m - metr " << endl;
+	cout << "6. mm - milimetr " << endl << endl;
+	cout << "Wprowadz numer opcji: " << endl;
+	cin >> wybor_drugiej;
+		
+		switch(wybor_drugiej){
+			case 1:{
+			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.032808399 << " ft" << endl;
+			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.393700787 << " in" << endl;
+			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * // tu koncze swoj monolog, dodam case'y spokojnie
 	
 
 }
