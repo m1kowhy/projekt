@@ -53,7 +53,9 @@ void zamiana_jednostek(){
     cout << "9. ft - stopa" << endl;
     cout << "10. mi - mila" << endl;
     cout << "11. km- kilometr" <<  endl;
-    cout << "12. g - gram" <<  endl <<endl ;
+    cout << "12. g - gram" <<  endl;
+	cout << "13. mm - milimetr" << endl;
+	cout << "14. cm - centymetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_pierwszej;
 
@@ -64,7 +66,7 @@ void zamiana_jednostek(){
 
     switch (wybor_pierwszej){
         case 1:{
-        system("cls");
+        system("cls"); // kilogram;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. oz - uncja" << endl;
@@ -92,13 +94,15 @@ void zamiana_jednostek(){
         
         break;
             case 2:{
-            system("cls");
+            system("cls"); // metr;
         cout << "--- Menu zamiany jednostek ---" << endl;
         cout << "Wybierz jednostke docelowa: " << endl << endl;
         cout << "1. in - cal" << endl;
         cout << "2. ft - stopa" << endl;
         cout << "3. mi - mila" <<  endl;
-        cout << "4. km - kilometr" << endl << endl;
+        cout << "4. km - kilometr" << endl;
+		cout << "5. cm - centymetr" << endl;
+		cout << "6. mm - milimetr" << endl << endl;
         cout << "Wprowadz numer opcji: ";
         cin >> wybor_drugiej;
 
@@ -119,12 +123,20 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.001 << " km" << endl;
             }
             break;
+			case 5:{
+			cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 100 << " cm" << endl;
+			}
+			break;
+			case 6:{
+			cout << endl << wartosc_wprowadzana << " m to: " << wartosc wprowadzana * 1000 << " mm" << endl;
+			}
+			break;
         }
 
         }
         break;
             case 3:{
-        system("cls");
+        system("cls"); // kelviny;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. F - Fahrenheit" << endl;
@@ -146,7 +158,7 @@ void zamiana_jednostek(){
         }
         break;
             case 4:{
-        system("cls");
+        system("cls"); // fahrenheity;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. K - Kelvin" << endl;
@@ -169,7 +181,7 @@ void zamiana_jednostek(){
         break;
 
             case 5:{
-        system("cls");
+        system("cls"); // celsjusze;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. K - Kelvin" << endl;
@@ -192,13 +204,15 @@ void zamiana_jednostek(){
         break;
 
             case 6:{
-        system("cls");
+        system("cls"); // cale;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
     cout << "2. ft - stopa" << endl;
     cout << "3. mi - mila"  << endl;
-    cout << "4. km - kilometr" << endl << endl;
+    cout << "4. km - kilometr" << endl;
+	cout << " 5. cm - centymetr" << endl;
+	cout << "6. mm - milimetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -218,12 +232,21 @@ void zamiana_jednostek(){
             case 4:{
             cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.00003 << " km" << endl;
             break;
+			case 5:{
+			cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 2.54 << " cm" << endl;
+			}
+			break;
+			case 6:{
+			cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 25.4 << " mm" << endl;
+			}
+			break;
         }
+		
         }
         break;
      
             case 7:{
-        system("cls");
+        system("cls"); // funty;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
@@ -251,7 +274,7 @@ void zamiana_jednostek(){
         break;
 
             case 8:{
-        system("cls");
+        system("cls"); // uncje;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
@@ -279,13 +302,15 @@ void zamiana_jednostek(){
         break;
 
             case 9:{
-        system("cls");
+        system("cls"); // stopy;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
     cout << "2. in - cal" << endl;
     cout << "3. km - kilometr" << endl;
-	cout << "4. mi - mila" << endl << endl;
+	cout << "4. mi - mila" << endl;
+	cout << "5. cm - centymetr" << endl;
+	cout << "6. mm - milimetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -306,13 +331,21 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.0003 << " km" << endl;
             }
             break;
+			case 5:{
+			cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 30.48 << " cm" << endl;
+			}
+			break;
+			case 6:{
+			cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 304.8 << " mm" << endl;
+			}
+			break;
         }
         }
 
         }
         break;
             case 11:{
-        system("cls");
+        system("cls"); // kilometry;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
@@ -340,7 +373,7 @@ void zamiana_jednostek(){
         }
         break;
             case 12:{
-        system("cls");
+        system("cls"); // gramy;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
@@ -368,7 +401,7 @@ void zamiana_jednostek(){
         }
         break;
 			case 13:{
-		system("cls"); // mila
+		system("cls"); // mila;
 	cout << "--- Menu zamiany jednostek ---" << endl;
 	cout << "Wybierz jednostke docelowa: " << endl << endl;
 	cout << "1. km - kilometr" << endl;
