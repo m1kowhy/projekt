@@ -311,7 +311,7 @@ void zamiana_jednostek(){
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
-    cout << "2. in - cal" << endl << endl;
+    cout << "2. in - cal" << endl ;
     cout << "3. ft - stopa" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
