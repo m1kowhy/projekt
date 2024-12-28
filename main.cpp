@@ -284,7 +284,8 @@ void zamiana_jednostek(){
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
     cout << "2. in - cal" << endl;
-    cout << "3. km - kilometr" << endl << endl;            
+    cout << "3. km - kilometr" << endl;
+	cout << "4. mi - mila" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -297,6 +298,10 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 12 << " in" << endl;
             }
             break;
+			case 3:{
+			cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.000189394 << " mi" << endl;
+			}
+			break;
             case 4:{
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.0003 << " km" << endl;
             }
