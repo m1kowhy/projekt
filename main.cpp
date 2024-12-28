@@ -51,7 +51,9 @@ void zamiana_jednostek(){
     cout << "7. lb - funt" << endl;
     cout << "8. oz - uncja" << endl;
     cout << "9. ft - stopa" << endl;
-    cout << "10. mi - mila" << endl << endl;
+    cout << "10. mi - mila" << endl;
+    cout << "11. km- kilometr" <<  endl;
+    cout << "12. g - gram" <<  endl <<endl ;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_pierwszej;
 
@@ -66,7 +68,8 @@ void zamiana_jednostek(){
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. oz - uncja" << endl;
-    cout << "2. lb - funt" << endl << endl;
+    cout << "2. lb - funt" << endl ;
+    cout << "3. g - gram" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -79,9 +82,14 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 2.20 << " lb" << endl;
             }
             break;
+            case 3:{
+            cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 1000 << " g" << endl;
+            }
+            break;
+        }
         }
 
-        }
+        
         break;
             case 2:{
             system("cls");
@@ -89,7 +97,8 @@ void zamiana_jednostek(){
         cout << "Wybierz jednostke docelowa: " << endl << endl;
         cout << "1. in - cal" << endl;
         cout << "2. ft - stopa" << endl;
-        cout << "3. mi - mila" << endl << endl;
+        cout << "3. mi - mila" <<  endl;
+        cout << "4. km - kilometr" << endl << endl;
         cout << "Wprowadz numer opcji: ";
         cin >> wybor_drugiej;
 
@@ -104,8 +113,12 @@ void zamiana_jednostek(){
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.000621371192 << " mi" << endl;
-                break;
             }
+            break;
+            case 4:{
+            cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.001 << " km" << endl;
+            }
+            break;
         }
 
         }
@@ -184,7 +197,8 @@ void zamiana_jednostek(){
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
     cout << "2. ft - stopa" << endl;
-    cout << "3. mi - mila" << endl << endl;
+    cout << "3. mi - mila"  << endl;
+    cout << "4. km - kilometr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -199,18 +213,22 @@ void zamiana_jednostek(){
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.0000157828 << " mi" << endl;
-        }
+            }
+            break;
+            case 4:{
+            cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.00003 << " km" << endl;
             break;
         }
-
+        }
         break;
-     }
+     
             case 7:{
         system("cls");
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
-    cout << "2. oz - uncja" << endl << endl;
+    cout << "2. oz - uncja" << endl ;
+    cout << "3. g - gram" << endl << endl;            
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -223,6 +241,10 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana * 16 << " oz" << endl;
             }
             break;
+            case 3:{
+            cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana *453.5923 << " g" << endl;
+            }
+            break;
         }
 
         }
@@ -233,7 +255,8 @@ void zamiana_jednostek(){
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
-    cout << "2. lb - funt" << endl << endl;
+    cout << "2. lb - funt" << endl ;
+    cout << "3. g - gram" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -246,6 +269,10 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 0.06 << " lb" << endl;
             }
             break;
+            case 3:{
+            cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 28.34952 << " g" << endl;
+            }
+            break;
         }
 
         }
@@ -256,7 +283,8 @@ void zamiana_jednostek(){
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. m - metr" << endl;
-    cout << "2. in - cal" << endl << endl;
+    cout << "2. in - cal" << endl;
+    cout << "3. km - kilometr" << endl << endl;            
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -269,6 +297,11 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 12 << " in" << endl;
             }
             break;
+            case 4:{
+            cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.0003 << " km" << endl;
+            }
+            break;
+        }
         }
 
         }
@@ -294,6 +327,34 @@ void zamiana_jednostek(){
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana *  3280 << " ft" << endl;
+            }
+            break;
+         
+        }
+
+        }
+        break;
+            case 12:{
+        system("cls");
+    cout << "--- Menu zamiany jednostek ---" << endl;
+    cout << "Wybierz jednostke docelowa: " << endl << endl;
+    cout << "1. kg - kilogram" << endl;
+    cout << "2. lb - funt " << endl ;
+    cout << "3. oz - uncja " << endl << endl;
+    cout << "Wprowadz numer opcji: ";
+    cin >> wybor_drugiej;
+
+        switch (wybor_drugiej){
+            case 1:{
+             cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.001 << " kg" << endl;
+            }
+            break;
+            case 2:{
+            cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.002204623 << " lb" << endl;
+            }
+            break;
+            case 3:{
+            cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.03527396 << " oz" << endl;
             }
             break;
          
