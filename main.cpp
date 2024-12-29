@@ -500,7 +500,7 @@ void zamiana_jednostek(){
 
 
 	     case 15:{
-        system("cls"); // gramy;
+        system("cls"); 
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
