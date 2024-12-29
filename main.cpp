@@ -217,7 +217,7 @@ void zamiana_jednostek(){
     cout << "2. ft - stopa" << endl;
     cout << "3. mi - mila"  << endl;
     cout << "4. km - kilometr" << endl;
-    cout << " 5. cm - centymetr" << endl;
+    cout << "5. cm - centymetr" << endl;
     cout << "6. mm - milimetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
@@ -493,7 +493,7 @@ void zamiana_jednostek(){
 	cout << " 3. mi - mila " << endl;
 	cout << " 4. km - kilometr " << endl;
 	cout << " 5. m - metr " << endl;
-	cout << " 6. cm - centrymetr " << endl;
+	cout << " 6. cm - centrymetr " << endl << endl;
 	cout << "Wprowadz numer opcji: " ;
 	cin >> wybor_drugiej;
 
