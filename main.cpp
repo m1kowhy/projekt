@@ -107,8 +107,8 @@ void zamiana_jednostek(){
         cout << "2. ft - stopa" << endl;
         cout << "3. mi - mila" <<  endl;
         cout << "4. km - kilometr" << endl;
-		cout << "5. cm - centymetr" << endl;
-		cout << "6. mm - milimetr" << endl << endl;
+	cout << "5. cm - centymetr" << endl;
+	cout << "6. mm - milimetr" << endl << endl;
         cout << "Wprowadz numer opcji: ";
         cin >> wybor_drugiej;
 
@@ -134,7 +134,7 @@ void zamiana_jednostek(){
 	    }
 	    break;
 	    case 6:{
-	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc wprowadzana * 1000 << " mm" << endl;
+	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 1000 << " mm" << endl;
 	    }
 	    break;
         }
@@ -443,8 +443,8 @@ void zamiana_jednostek(){
 	cout << "Wybierz jednostke docelowa: " << endl << endl;
 	cout << "1. km - kilometr" << endl;
 	cout << "2. m - metr" << endl;
-	cout << "3. cm - centymetr << endl;
-	cout << "4. mm - milimetr << endl;
+	cout << "3. cm - centymetr" << endl;
+	cout << "4. mm - milimetr" << endl;
 	cout << "5. in - cal" << endl;
 	cout << "6. ft - stopa" << endl << endl;
 	cout << "Wprowadz numer opcji: " << endl;
