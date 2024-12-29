@@ -558,6 +558,52 @@ void zamiana_jednostek(){
         }
         break;
 
+	    case 16:{
+	system("cls"); // milimetry;
+	cout <<" --- Menu zamiany jednostek --- " << endl;
+	cout << " Wybierz jednostke docelowa: "<< endl << endl;
+	cout << " 1. ft - stopa " << endl;
+	cout << " 2. in - cal " << endl;
+	cout << " 3. mi - mila " << endl;
+	cout << " 4. km - kilometr " << endl;
+	cout << " 5. m - metr " << endl;
+	cout << " 6. cm - centrymetr " << endl;
+	cout << "Wprowadz numer opcji: " ;
+	cin >> wybor_drugiej;
+
+	    switch (wybor_drugiej){
+		case 1:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.003281 << " ft" << endl;
+		}
+		break;
+		case 2:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.03937 << " in" << endl;
+		}
+		break;
+		case 3:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.000000621371192 << " mi" << endl;
+		}
+		break;
+		case 4:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.000001 << " km" << endl;
+		}
+		break;
+		case 5:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.001 << " m" << endl;
+		}
+		break;
+		case 6:{
+		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.1 << " cm" << endl;
+		}
+		break;
+	    }
+
+	    }
+	    break;
+			
+		
+	
+
 	     
 	
 
