@@ -129,14 +129,14 @@ void zamiana_jednostek(){
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.001 << " km" << endl;
             }
             break;
-			case 5:{
-			cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 100 << " cm" << endl;
-			}
-			break;
-			case 6:{
-			cout << endl << wartosc_wprowadzana << " m to: " << wartosc wprowadzana * 1000 << " mm" << endl;
-			}
-			break;
+	    case 5:{
+	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 100 << " cm" << endl;
+	    }
+	    break;
+	    case 6:{
+	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc wprowadzana * 1000 << " mm" << endl;
+	    }
+	    break;
         }
 
         }
@@ -217,8 +217,8 @@ void zamiana_jednostek(){
     cout << "2. ft - stopa" << endl;
     cout << "3. mi - mila"  << endl;
     cout << "4. km - kilometr" << endl;
-	cout << " 5. cm - centymetr" << endl;
-	cout << "6. mm - milimetr" << endl << endl;
+    cout << " 5. cm - centymetr" << endl;
+    cout << "6. mm - milimetr" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_drugiej;
 
@@ -437,8 +437,8 @@ void zamiana_jednostek(){
 
         }
         break;
-			case 13:{
-		system("cls"); // mila;
+	case 13:{
+	system("cls"); // mila;
 	cout << "--- Menu zamiany jednostek ---" << endl;
 	cout << "Wybierz jednostke docelowa: " << endl << endl;
 	cout << "1. km - kilometr" << endl;
@@ -450,37 +450,37 @@ void zamiana_jednostek(){
 	cout << "Wprowadz numer opcji: " << endl;
 	cin >> wybor_drugiej;
 	
-		switch(wybor_drugiej){
-			case 1:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1.609344 <<" km" << endl;
-			}
-			break;
-			case 2:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609.344 << " m" << endl;
-			}
-			break;
-			case 3:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 160934.4 << " cm" << endl;
-			}
-			break;
-			case 4:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609344 << " mm" << endl;
-			}
-			break;
-			case 5:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 63360 << " in" << endl;
-			}
-			break;
-			case 6:{
-			cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 5280 << " ft" << endl;
-			}
-			break;
+	    switch(wybor_drugiej){
+		case 1:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1.609344 <<" km" << endl;
+		}
+		break;
+		case 2:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609.344 << " m" << endl;
+		}
+		break;
+		case 3:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 160934.4 << " cm" << endl;
+		}
+		break;
+		case 4:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609344 << " mm" << endl;
+		}
+		break;
+		case 5:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 63360 << " in" << endl;
+		}
+		break;
+		case 6:{
+		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 5280 << " ft" << endl;
+		}
+		break;
 	}
 	
 	}
 	break;
-			case 14:{
-		system("cls"); // centymetry
+	case 14:{
+	system("cls"); // centymetry;
 	cout <<" --- Menu zamiany jednostek --- " << endl;
 	cout << " Wybierz jednostke docelowa: "<< endl << endl;
 	cout << "1. ft - stopa " << endl;
@@ -492,15 +492,40 @@ void zamiana_jednostek(){
 	cout << "Wprowadz numer opcji: " << endl;
 	cin >> wybor_drugiej;
 		
-		switch(wybor_drugiej){
-			case 1:{
-			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.032808399 << " ft" << endl;
-			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.393700787 << " in" << endl;
-			cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * // tu koncze swoj monolog, dodam case'y spokojnie
+	    switch(wybor_drugiej){
+		case 1:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.032808399 << " ft" << endl;
+		}
+		break;
+		case 2:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.393700787 << " in" << endl;
+		}
+		break;
+		case 3:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.000006 << " mi" << endl;
+		}
+		break;
+		case 4:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.00001 << " km" << endl;
+		}
+		break;
+		case 5:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.01 << " cm" << endl;
+		}
+		break;
+		case 6:{
+		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 10 << " mm" << endl;
+		}
+		break;
+	    }
+
+	    }
+	    break;
+                
 
 
 	     case 15:{
-        system("cls"); 
+        system("cls"); // tona;
     cout << "--- Menu zamiany jednostek ---" << endl;
     cout << "Wybierz jednostke docelowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
@@ -532,6 +557,8 @@ void zamiana_jednostek(){
 
         }
         break;
+
+	     
 	
 
 }
