@@ -4,6 +4,8 @@
 using namespace std;
 
 int wybor;
+char dalej;
+
 
 void zamiana_jednostek();
 void menu_glowne();
@@ -11,16 +13,18 @@ void menu_glowne();
 int main(){
 
 
-
+    do {
     menu_glowne();
     switch (wybor){
 
         case 1: zamiana_jednostek();
         break;
     }
+    }
+    while (dalej != 'Y' || dalej != 'y');
 
 }
-
+ 
 void menu_glowne(){
     system("cls");
     cout << "--- Menu narzedzia inzynieryjnego (idk) ---" << endl << endl;
@@ -36,8 +40,9 @@ void zamiana_jednostek(){
     int wybor_pierwszej;
     int wybor_drugiej;
     float wartosc_wprowadzana;
+    
     //float wynik;
-
+    do{
     system("cls");
 
     cout << "--- Menu zamiany jednostek ---" << endl;
@@ -80,18 +85,23 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 35.27 << " oz" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+            
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 2.20 << " lb" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 1000 << " g" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 4:{
             cout << endl << wartosc_wprowadzana << " kg to: " << wartosc_wprowadzana * 0.001 << " t" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -115,26 +125,32 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 39.37 << " in" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 3.28 << " ft" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.000621371192 << " mi" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 4:{
             cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 0.001 << " km" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 5:{
 	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 100 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
 	    case 6:{
 	    cout << endl << wartosc_wprowadzana << " m to: " << wartosc_wprowadzana * 1000 << " mm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
         }
@@ -153,10 +169,12 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " K to: " << (wartosc_wprowadzana * 1.8) - 459.67 << " F" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " K to: " << wartosc_wprowadzana - 273.15 << " C" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -175,10 +193,12 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " F to: " << (wartosc_wprowadzana + 459.67) / 1.8 << " K" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " F to: " << (wartosc_wprowadzana - 32) / 1.8 << " C" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -198,10 +218,12 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " C to: " << wartosc_wprowadzana + 273.15 << " K" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " C to: " << (wartosc_wprowadzana * 1.8) + 32 << " F" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -225,25 +247,31 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.03 << " m" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.08 << " ft" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.0000157828 << " mi" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 4:{
             cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 0.00003 << " km" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             break;
 	    case 5:{
 	    cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 2.54 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
 	    case 6:{
 	    cout << endl << wartosc_wprowadzana << " in to: " << wartosc_wprowadzana * 25.4 << " mm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
         }
@@ -265,18 +293,22 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana * 0.45 << " kg" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana * 16 << " oz" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana *453.5923 << " g" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 4:{
             cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana * 0.00045 << " t" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -298,18 +330,22 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 0.03 << " kg" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 0.06 << " lb" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 28.34952 << " g" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 4:{
             cout << endl << wartosc_wprowadzana << " oz to: " << wartosc_wprowadzana * 0.00003 << " t" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
         }
@@ -333,26 +369,32 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.30 << " m" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 12 << " in" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 3:{
 	    cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.000189394 << " mi" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }  
 	    break;
             case 4:{
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 0.0003 << " km" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 5:{
 	    cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 30.48 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
 	    case 6:{
             cout << endl << wartosc_wprowadzana << " ft to: " << wartosc_wprowadzana * 304.8 << " mm" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
         }
@@ -378,26 +420,32 @@ void zamiana_jednostek(){
 	    switch(wybor_drugiej){
 		case 1:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1.609344 <<" km" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 2:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609.344 << " m" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 3:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 160934.4 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 4:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 1609344 << " mm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 5:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 63360 << " in" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 6:{
 		cout << endl << wartosc_wprowadzana << " mi to: " << wartosc_wprowadzana * 5280 << " ft" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 	}
@@ -421,26 +469,32 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 1000 << " m" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 39370.08 << " in" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana *  3280 << " ft" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 4:{
 	    cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 0.621371192 << " mi" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
             case 5:{
 	    cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 1000 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
 	    break;
 	    case 6:{
 	    cout << endl << wartosc_wprowadzana << " km to: " << wartosc_wprowadzana * 10000 << " mm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
 			
@@ -463,18 +517,22 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.001 << " kg" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.002204623 << " lb" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.03527396 << " oz" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 4:{
              cout << endl << wartosc_wprowadzana << " g to: " << wartosc_wprowadzana * 0.000001 << " t" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
          
@@ -500,26 +558,32 @@ void zamiana_jednostek(){
 	    switch (wybor_drugiej){
 		case 1:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.003281 << " ft" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 2:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.03937 << " in" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 3:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.000000621371192 << " mi" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 4:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.000001 << " km" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 5:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.001 << " m" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 6:{
 		cout << endl << wartosc_wprowadzana << " mm to: " << wartosc_wprowadzana * 0.1 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 	    }
@@ -536,32 +600,38 @@ void zamiana_jednostek(){
 	cout << "4. km - kilometr " << endl;
 	cout << "5. m - metr " << endl;
 	cout << "6. mm - milimetr " << endl << endl;
-	cout << "Wprowadz numer opcji: " << endl;
+	cout << "Wprowadz numer opcji: ";
 	cin >> wybor_drugiej;
 		
 	    switch(wybor_drugiej){
 		case 1:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.032808399 << " ft" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 2:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.393700787 << " in" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 3:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.000006 << " mi" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 4:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.00001 << " km" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 5:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 0.01 << " cm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 		case 6:{
 		cout << endl << wartosc_wprowadzana << " cm to: " << wartosc_wprowadzana * 10 << " mm" << endl;
+        cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 		}
 		break;
 	    }
@@ -585,18 +655,22 @@ void zamiana_jednostek(){
         switch (wybor_drugiej){
             case 1:{
              cout << endl << wartosc_wprowadzana << " t to: " << wartosc_wprowadzana * 1000 << " kg" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 2:{
             cout << endl << wartosc_wprowadzana << " t to: " << wartosc_wprowadzana * 2204.623 << " lb" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
             case 3:{
             cout << endl << wartosc_wprowadzana << " t to: " << wartosc_wprowadzana * 35273.96 << " oz" << endl;
+            cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
 	    case 4:{
              cout << endl << wartosc_wprowadzana << " t to: " << wartosc_wprowadzana * 1000000 << " t" << endl;
+             cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
             }
             break;
          
@@ -614,4 +688,6 @@ void zamiana_jednostek(){
 	
 
 }
+}
+while(dalej == 'Y' || dalej == 'y');
 }
