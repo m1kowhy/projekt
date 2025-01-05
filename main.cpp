@@ -7,12 +7,13 @@ int wybor;
 char dalej;
 
 
+
 void zamiana_jednostek();
 void menu_glowne();
 
 int main(){
 
-
+   
     do {
     menu_glowne();
     switch (wybor){
@@ -21,7 +22,7 @@ int main(){
         break;
     }
     }
-    while (dalej != 'Y' || dalej != 'y');
+    while (dalej != 'Y' || dalej != 'y' || wybor > 1);
 
 }
  
@@ -36,12 +37,12 @@ void menu_glowne(){
 }
 
 void zamiana_jednostek(){
-
+    
     int wybor_pierwszej;
     int wybor_drugiej;
+
     float wartosc_wprowadzana;
     
-    //float wynik;
     do{
     system("cls");
 
@@ -117,8 +118,8 @@ void zamiana_jednostek(){
         cout << "2. ft - stopa" << endl;
         cout << "3. mi - mila" <<  endl;
         cout << "4. km - kilometr" << endl;
-	cout << "5. cm - centymetr" << endl;
-	cout << "6. mm - milimetr" << endl << endl;
+	    cout << "5. cm - centymetr" << endl;
+	    cout << "6. mm - milimetr" << endl << endl;
         cout << "Wprowadz numer opcji: ";
         cin >> wybor_drugiej;
 
