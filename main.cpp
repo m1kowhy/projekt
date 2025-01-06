@@ -334,7 +334,7 @@ void zamiana_jednostek(){
 	    }
 	    break;
 	    case 6:{
-	    cout << endl << wartosc_wprowadzana < " lb to: " << wartosc_wprowadzana * 453592.4 << " mg" << endl;
+	    cout << endl << wartosc_wprowadzana << " lb to: " << wartosc_wprowadzana * 453592.4 << " mg" << endl;
 	    cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
 	    }
 	    break;
