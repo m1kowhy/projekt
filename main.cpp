@@ -41,7 +41,7 @@ void zamiana_jednostek(){
     int wybor_pierwszej;
     int wybor_drugiej;
 
-    float wartosc_wprowadzana;
+    double wartosc_wprowadzana;
     
     do{
     system("cls");
@@ -740,6 +740,58 @@ void zamiana_jednostek(){
 
         }
         break;
+
+
+	    case 16:{
+	system("cls"); //dekagram
+	cout << "--- Menu zamiany jednostek ---" << endl;
+        cout << "Wybierz jednostke docelowa: " << endl << endl;
+	cout << "1. kg - kilogram" << endl;
+        cout << "2. lb - funt " << endl ;
+        cout << "3. oz - uncja " << endl;
+        cout << "4. g - gram " << endl;
+        cout << "5. t - tona" << endl;
+        cout << "6. mg - miligram" << endl << endl;
+        cout << "Wprowadz numer opcji: ";
+        cin >> wybor_drugiej;
+		    
+	    switch(wybor_drugiej){
+		case 1:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 0.01 << " kg" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+		case 2:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 0.022046 << " lb" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+		case 3:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 0.35274 << " oz" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+		case 4:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 10 << " g" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+		case 5:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 0.00001 << " t" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+		case 6:{
+		cout << endl << wartosc_wprowadzana << " dag to: " << wartosc_wprowadzana * 10000 << " mg" << endl;
+		cout << endl << "Czy chcesz zamienic kolejna jednostke? (Y/N) : "; cin >> dalej;
+		}
+		break;
+
+	    }
+
+	    }
+	    break;
+		
 
 
 			
