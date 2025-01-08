@@ -11,6 +11,7 @@ char dalej;
 void zamiana_jednostek();
 void menu_glowne();
 void obliczanie_pol();
+void obliczanie_objetosci();
 
 
 int main(){
@@ -24,7 +25,9 @@ int main(){
         break;
         case 2: obliczanie_pol();
         break;
-        case 3: exit(0);
+        case 3: obliczanie_objetosci();
+        break;
+        case 4: exit(0);
         break;
     }
     }
@@ -36,8 +39,9 @@ void menu_glowne(){
     system("cls");
     cout << "--- Menu narzedzia inzynieryjnego ---" << endl << endl;
     cout << "1. Zamiana jednostek" << endl;
-    cout << "2. Obliczanie pol" << endl;
-    cout << "3. Wyjscie" << endl << endl;
+    cout << "2. Obliczanie pol figur" << endl;
+    cout << "3. Obliczanie objetosci bryl" << endl;
+    cout << "4. Wyjscie" << endl << endl;
     cout << "-------------------------------------" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor;
@@ -53,7 +57,7 @@ void zamiana_jednostek(){
     do{
     system("cls");
 
-    cout << "--- Menu zamiany jednostek ---" << endl;
+    cout << "--- Menu zamiany jednostek ---" << endl << endl;
     cout << "Wybierz jednostke poczatkowa: " << endl << endl;
     cout << "1. kg - kilogram" << endl;
     cout << "2. m - metr" << endl;
@@ -72,6 +76,7 @@ void zamiana_jednostek(){
     cout << "15. t - tona " <<  endl;
     cout << "16. dag - dekagram" << endl;
     cout << "17. mg - miligram" << endl << endl;
+    cout << "-------------------------------" << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor_pierwszej;
 
@@ -855,8 +860,8 @@ while(dalej == 'Y' || dalej == 'y');
 }
 
 void obliczanie_pol(){
-    char dalej;
-    int wybor_pierwszej;
+
+    int wybor_opcji;
     double wartosc_wprowadzana;
     do{
     system("cls");
@@ -865,50 +870,270 @@ void obliczanie_pol(){
     cout << "1. Kwadrat" << endl;
     cout << "2. Prostokat" << endl;
     cout << "3. Trojkat" << endl;
-    cout << "4. Kolo" << endl << endl;
+    cout << "4. Kolo" << endl;
+    cout << "5. Trapez" << endl;
+    cout << "6. Romb" << endl;
+    cout << "7. Rownoleglobok" << endl;
+    cout << "8. Wielokat foremny" << endl;
+    cout << "9. Szescian" << endl;
+    cout << "10. Prostopadloscian" << endl;
+    cout << "11. Stozek" << endl;
+    cout << "12. Walec" << endl;
+    cout << "13. Kula" << endl;
+    cout << "14. Graniastoslup" << endl;
+    cout << "15. Ostroslup" << endl;
+    cout << "---------------------------------" << endl;
     cout << "Wprowadz numer opcji: ";
-    cin >> wybor_pierwszej;
-    switch(wybor_pierwszej){
+    cin >> wybor_opcji;
+    switch(wybor_opcji){
         case 1:{
             
-            cout << endl <<"Podaj dlugosc boku kwadratu: ";
+            cout << endl <<"Podaj dlugosc boku kwadratu (cm): ";
             cin >> wartosc_wprowadzana;
-            cout << endl << "Pole kwadratu o boku " << wartosc_wprowadzana << " wynosi: " << wartosc_wprowadzana * wartosc_wprowadzana << endl;
+            cout << endl << "Pole kwadratu o boku " << wartosc_wprowadzana << " wynosi: " << wartosc_wprowadzana * wartosc_wprowadzana << " cm^2"<< endl;
             cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
         }
         break;
         case 2:{
             
             double bok_a, bok_b;
-            cout << endl << "Podaj dlugosc boku a: ";
+            cout << endl << "Podaj dlugosc boku a (cm): ";
             cin >> bok_a;
-            cout << endl <<"Podaj dlugosc boku b: ";
+            cout << endl <<"Podaj dlugosc boku b (cm): ";
             cin >> bok_b;
-            cout << endl << "Pole prostokata o bokach " << bok_a << " i " << bok_b << " wynosi: " << bok_a * bok_b << endl;
+            cout << endl << "Pole prostokata o bokach " << bok_a << " i " << bok_b << " wynosi: " << bok_a * bok_b << " cm^2"<< endl;
             cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
         }
         break;
         case 3:{
             
             double podstawa, wysokosc;
-            cout << endl <<"Podaj dlugosc podstawy trojkata: ";
+            cout << endl <<"Podaj dlugosc podstawy trojkata (cm): ";
             cin >> podstawa;
-            cout << endl <<"Podaj wysokosc trojkata: ";
+            cout << endl <<"Podaj wysokosc trojkata (cm): ";
             cin >> wysokosc;
-            cout << endl << "Pole trojkata o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << (podstawa * wysokosc) / 2 << endl;
+            cout << endl << "Pole trojkata o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << (podstawa * wysokosc) / 2 <<" cm^2" << endl;
             cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
         }
         break;
         case 4:{
             
             double promien;
-            cout << endl <<"Podaj dlugosc promienia kola: ";
+            cout << endl <<"Podaj dlugosc promienia kola (cm): ";
             cin >> promien;
-            cout << endl << "Pole kola o promieniu " << promien << " wynosi: " << 3.14 * promien * promien << endl;
+            cout << endl << "Pole kola o promieniu " << promien << " wynosi: " << 3.14 * promien * promien << " cm^2"<< endl;
             cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
 
         }
         break;
+        case 5:{
+            
+            double podstawa_a, podstawa_b, wysokosc;
+            cout << endl <<"Podaj dlugosc podstawy a (cm): ";
+            cin >> podstawa_a;
+            cout << endl <<"Podaj dlugosc podstawy b (cm): ";
+            cin >> podstawa_b;
+            cout << endl <<"Podaj wysokosc trapezu (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Pole trapezu o podstawach " << podstawa_a << " i " << podstawa_b << " oraz wysokosci " << wysokosc << " wynosi: " << ((podstawa_a + podstawa_b) * wysokosc) / 2 <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
         }
+        break;
+        case 6:{
+            
+            double przekatna_a, przekatna_b;
+            cout << endl <<"Podaj dlugosc przekatnej a (cm): ";
+            cin >> przekatna_a;
+            cout << endl <<"Podaj dlugosc przekatnej b (cm): ";
+            cin >> przekatna_b;
+            cout << endl << "Pole rombu o przekatnych " << przekatna_a << " i " << przekatna_b << " wynosi: " << (przekatna_a * przekatna_b) / 2 <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 7:{
+
+            double podstawa, wysokosc;
+            cout << endl <<"Podaj dlugosc podstawy rownolegloboku (cm): ";
+            cin >> podstawa;
+            cout << endl <<"Podaj wysokosc rownolegloboku (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Pole rownolegloboku o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << podstawa * wysokosc <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 8:{
+
+            double obwod, apotema;
+            cout << endl <<"Podaj dlugosc obwodu wielokata foremnego (cm): ";
+            cin >> obwod;
+            cout << endl <<"Podaj dlugosc apotemy wielokata foremnego (cm): ";
+            cin >> apotema;
+            cout << endl << "Pole wielokata foremnego o obwodzie " << obwod << " i apotece " << apotema << " wynosi: " << (obwod * apotema) / 2 <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 9:{
+
+            double bok;
+            cout << endl <<"Podaj dlugosc boku szescianu (cm): ";
+            cin >> bok;
+            cout << endl << "Pole szescianu o boku " << bok << " wynosi: " << 6 * bok * bok <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 10:{
+
+            double bok_a, bok_b, bok_c;
+            cout << endl << "Podaj dlugosc boku a (cm): ";
+            cin >> bok_a;
+            cout << endl <<"Podaj dlugosc boku b (cm): ";
+            cin >> bok_b;
+            cout << endl <<"Podaj dlugosc boku c (cm): ";
+            cin >> bok_c;
+            cout << endl << "Pole prostopadloscianu o bokach " << bok_a << ", " << bok_b << " i " << bok_c << " wynosi: " << 2 * (bok_a * bok_b + bok_a * bok_c + bok_b * bok_c) <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 11:{
+
+            double promien, tworzaca;
+            cout << endl <<"Podaj dlugosc promienia stozka (cm): ";
+            cin >> promien;
+            cout << endl <<"Podaj dlugosc tworzacej stozka (cm): ";
+            cin >> tworzaca;
+            cout << endl << "Pole stozka o promieniu " << promien << " i tworzacej " << tworzaca << " wynosi: " << 3.14 * promien * (promien + tworzaca) <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 13:{
+
+            double promien;
+            cout << endl <<"Podaj dlugosc promienia kuli (cm): ";
+            cin >> promien;
+            cout << endl << "Pole kuli o promieniu " << promien << " wynosi: " << 4 * 3.14 * promien * promien <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 14:{
+
+            double podstawa, wysokosc;
+            cout << endl <<"Podaj dlugosc podstawy graniastoslupa (cm): ";
+            cin >> podstawa;
+            cout << endl <<"Podaj wysokosc graniastoslupa (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Pole graniastoslupa o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << podstawa * wysokosc <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 15:{
+
+            double podstawa, wysokosc;
+            cout << endl <<"Podaj dlugosc podstawy ostroslupa (cm): ";
+            cin >> podstawa;
+            cout << endl <<"Podaj wysokosc ostroslupa (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Pole ostroslupa o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << podstawa * wysokosc <<" cm^2"<< endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        }
+    } while(dalej == 'Y' || dalej == 'y');
+    }
+
+    void obliczanie_objetosci(){
+
+    int wybor_opcji;
+    double wartosc_wprowadzana;
+    do{
+    system("cls");
+    cout << "--- Menu obliczania objetosci figur ---" << endl;
+    cout << "Wybierz figure: " << endl << endl;
+    cout << "1. Szescian" << endl;
+    cout << "2. Prostopadloscian" << endl;
+    cout << "3. Stozek" << endl;
+    cout << "4. Walec" << endl;
+    cout << "5. Kula" << endl;
+    cout << "6. Graniastoslup" << endl;
+    cout << "7. Ostroslup" << endl;
+    cout << "---------------------------------" << endl;
+    cout << "Wprowadz numer opcji: ";
+    cin >> wybor_opcji;
+    switch(wybor_opcji){
+        case 1:{
+            
+            cout << endl <<"Podaj dlugosc boku szescianu (cm): ";
+            cin >> wartosc_wprowadzana;
+            cout << endl << "Objetosc szescianu o boku " << wartosc_wprowadzana << " wynosi: " << wartosc_wprowadzana * wartosc_wprowadzana * wartosc_wprowadzana <<" cm^3"<< endl;
+            cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 2:{
+            
+            double bok_a, bok_b, bok_c;
+            cout << endl << "Podaj dlugosc boku a (cm): ";
+            cin >> bok_a;
+            cout << endl <<"Podaj dlugosc boku b (cm): ";
+            cin >> bok_b;
+            cout << endl <<"Podaj dlugosc boku c (cm): ";
+            cin >> bok_c;
+            cout << endl << "Objetosc prostopadloscianu o bokach " << bok_a << ", " << bok_b << " i " << bok_c << " wynosi: " << bok_a * bok_b * bok_c <<" cm^3"<< endl;
+            cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 3:{
+            
+            double promien, wysokosc;
+            cout << endl <<"Podaj dlugosc promienia stozka (cm): ";
+            cin >> promien;
+            cout << endl <<"Podaj wysokosc stozka (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Objetosc stozka o promieniu " << promien << " i wysokosci " << wysokosc << " wynosi: " << (3.14 * promien * promien * wysokosc) / 3 <<" cm^3"<< endl;
+            cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+
+        }
+        break;
+        case 4:{
+            
+            double promien, wysokosc;
+            cout << endl <<"Podaj dlugosc promienia walca (cm): ";
+            cin >> promien;
+            cout << endl <<"Podaj wysokosc walca (cm): ";
+            cin >> wysokosc;
+            cout << endl << "Objetosc walca o promieniu " << promien << " i wysokosci " << wysokosc << " wynosi: " << 3.14 * promien * promien * wysokosc <<" cm^3"<< endl;
+            cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;      
+    }
+    break;
+    case 5:{
+
+        double promien;
+        cout << endl <<"Podaj dlugosc promienia kuli (cm): ";
+        cin >> promien;
+        cout << endl << "Objetosc kuli o promieniu " << promien << " wynosi: " << (4 * 3.14 * promien * promien * promien) / 3 <<" cm^3"<< endl;
+        cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+    }
+    break;
+    case 6:{
+
+        double podstawa, wysokosc;
+        cout << endl <<"Podaj dlugosc podstawy graniastoslupa (cm): ";
+        cin >> podstawa;
+        cout << endl <<"Podaj wysokosc graniastoslupa (cm): ";
+        cin >> wysokosc;
+        cout << endl << "Objetosc graniastoslupa o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << podstawa * wysokosc <<" cm^3"<< endl;
+        cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+    }
+    break;
+    case 7:{
+
+        double podstawa, wysokosc;
+        cout << endl <<"Podaj dlugosc podstawy ostroslupa (cm): ";
+        cin >> podstawa;
+        cout << endl <<"Podaj wysokosc ostroslupa (cm): ";
+        cin >> wysokosc;
+        cout << endl << "Objetosc ostroslupa o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << (podstawa * podstawa * wysokosc) / 3 <<" cm^3"<< endl;
+        cout << endl << "Czy chcesz obliczyc objetosc innej figury? (Y/N) : "; cin >> dalej;
+    }
+    break;
+    }
     } while(dalej == 'Y' || dalej == 'y');
     }
