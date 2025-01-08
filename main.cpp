@@ -10,7 +10,8 @@ char dalej;
 
 void zamiana_jednostek();
 void menu_glowne();
-void koniec();
+void obliczanie_pol();
+
 
 int main(){
 
@@ -21,20 +22,23 @@ int main(){
 
         case 1: zamiana_jednostek();
         break;
-	case 2: koniec();
-	break;
+        case 2: obliczanie_pol();
+        break;
+        case 3: exit(0);
+        break;
     }
     }
-    while (dalej != 'Y' || dalej != 'y' || wybor > 2);
+    while (dalej != 'Y' || dalej != 'y');
 
 }
  
 void menu_glowne(){
     system("cls");
-    cout << "--- Menu narzedzia inzynieryjnego (idk) ---" << endl << endl;
+    cout << "--- Menu narzedzia inzynieryjnego ---" << endl << endl;
     cout << "1. Zamiana jednostek" << endl;
-    cout << "2. Koniec programu" << endl << endl;
-    cout << "-------------------------------------------" << endl << endl;
+    cout << "2. Obliczanie pol" << endl;
+    cout << "3. Wyjscie" << endl << endl;
+    cout << "-------------------------------------" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor;
 }
@@ -844,21 +848,67 @@ void zamiana_jednostek(){
 
 	     }
 	     break;
-		
-
-
-			
-		
-	
-
-	     
-	
 
 }
 }
 while(dalej == 'Y' || dalej == 'y');
 }
-void koniec(){
-	cout<<"koniec programu"<<endl;
-	
-}
+
+void obliczanie_pol(){
+    char dalej;
+    int wybor_pierwszej;
+    double wartosc_wprowadzana;
+    do{
+    system("cls");
+    cout << "--- Menu obliczania pol figur ---" << endl;
+    cout << "Wybierz figure: " << endl << endl;
+    cout << "1. Kwadrat" << endl;
+    cout << "2. Prostokat" << endl;
+    cout << "3. Trojkat" << endl;
+    cout << "4. Kolo" << endl << endl;
+    cout << "Wprowadz numer opcji: ";
+    cin >> wybor_pierwszej;
+    switch(wybor_pierwszej){
+        case 1:{
+            
+            cout << endl <<"Podaj dlugosc boku kwadratu: ";
+            cin >> wartosc_wprowadzana;
+            cout << endl << "Pole kwadratu o boku " << wartosc_wprowadzana << " wynosi: " << wartosc_wprowadzana * wartosc_wprowadzana << endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 2:{
+            
+            double bok_a, bok_b;
+            cout << endl << "Podaj dlugosc boku a: ";
+            cin >> bok_a;
+            cout << endl <<"Podaj dlugosc boku b: ";
+            cin >> bok_b;
+            cout << endl << "Pole prostokata o bokach " << bok_a << " i " << bok_b << " wynosi: " << bok_a * bok_b << endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 3:{
+            
+            double podstawa, wysokosc;
+            cout << endl <<"Podaj dlugosc podstawy trojkata: ";
+            cin >> podstawa;
+            cout << endl <<"Podaj wysokosc trojkata: ";
+            cin >> wysokosc;
+            cout << endl << "Pole trojkata o podstawie " << podstawa << " i wysokosci " << wysokosc << " wynosi: " << (podstawa * wysokosc) / 2 << endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+        }
+        break;
+        case 4:{
+            
+            double promien;
+            cout << endl <<"Podaj dlugosc promienia kola: ";
+            cin >> promien;
+            cout << endl << "Pole kola o promieniu " << promien << " wynosi: " << 3.14 * promien * promien << endl;
+            cout << endl << "Czy chcesz obliczyc pole innej figury? (Y/N) : "; cin >> dalej;
+
+        }
+        break;
+        }
+    } while(dalej == 'Y' || dalej == 'y');
+    }
