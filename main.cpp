@@ -10,6 +10,7 @@ char dalej;
 
 void zamiana_jednostek();
 void menu_glowne();
+void koniec();
 
 int main(){
 
@@ -20,9 +21,11 @@ int main(){
 
         case 1: zamiana_jednostek();
         break;
+	case 2: koniec();
+	break;
     }
     }
-    while (dalej != 'Y' || dalej != 'y' || wybor > 1);
+    while (dalej != 'Y' || dalej != 'y' || wybor > 2);
 
 }
  
@@ -30,7 +33,7 @@ void menu_glowne(){
     system("cls");
     cout << "--- Menu narzedzia inzynieryjnego (idk) ---" << endl << endl;
     cout << "1. Zamiana jednostek" << endl;
-    cout << "2. Opcja2" << endl << endl;
+    cout << "2. Koniec programu" << endl << endl;
     cout << "-------------------------------------------" << endl << endl;
     cout << "Wprowadz numer opcji: ";
     cin >> wybor;
@@ -854,4 +857,8 @@ void zamiana_jednostek(){
 }
 }
 while(dalej == 'Y' || dalej == 'y');
+}
+void koniec(){
+	cout<<"koniec programu"<<endl;
+	
 }
